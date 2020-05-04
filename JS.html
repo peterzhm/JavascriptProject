@@ -7,13 +7,12 @@
 			body{
 				border: 2px solid black;
 				padding: 25px;
-				<!-- 
 
-				background: url(back2.jpg);
+				background: url(back3.png);
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
 					First start here
-				-->
+
 			}
 			#myBtn{
 				  position: fixed;
@@ -37,6 +36,20 @@
 				  padding: 20px 0;
 				  background-color: pink;
 				  margin-top: 10px;
+			}
+			#btn{
+			      font-size: 18px;
+				  background-color: pink;
+				  color: white;
+                  cursor: pointer;
+				  padding: 15px;
+			}
+			#fbtn{
+				  font-size: 18px;
+				  background-color: pink;
+				  color: white;
+                  cursor: pointer;
+				  padding: 15px;
 			}
 		</style>
 </head>
@@ -86,9 +99,9 @@ function topFunction(){
 we drink water because we thirsty and we sleep because we tired. Those things are animal's </br>
 instinct, human do them, other animals, like cat or dog, they all do them. However, what makes human</br> 
 "human" is our intelligence and personality. We all make choice everyday, your environment, carrer, lover...</br>
-are all the results of your choice. But, stand behind the mirror and ask yourself. </br>
-Are you really happy for all your choices? Does all your choices follow your heart? Do you really want to do your job for next 50 years?</br>
-</br>
+are all the results of your choices. But, stand behind the mirror and ask yourself. </br>
+Are you really happy for all your choices? Does all your choices follow your heart? Do you really want to do your current job for next 50 years?</br>
+</br></br>
 Now, it is time to know your self better!
 </br>
 <img src = "intro.jpeg" height="250"/> 
@@ -101,9 +114,8 @@ Now, it is time to know your self better!
 <hr />
 <p>There are 21 people in the tree, select the position you want to stay in 10 seconds</p>
 <img src = "per1.png" height="550"/>
-</br> 
-<button onclick="pic1result()">Click me to see/hide result</button>
-
+</br>
+<button id = "fbtn" onclick="pic1result()">Click me to see/hide result</button>
 <div id="pic1" style="display:none">
 <p><strong>If you pick 1/3/6/7</strong></br>
 You are a positive and enthusiasm person. what doesn't kill you makes you stronger.</br>
@@ -153,6 +165,7 @@ However, you always hope get attention in a group of people. You afraid of being
 	}
 }
 </script>
+</br></br>
 
 
 <!-- 
@@ -206,7 +219,9 @@ Note: Please answer each question in <strong>10</strong> seconds.</p>
       </select>
 </br></br>
 
-<button onclick="buttonfunction()"> Click me to see result </button>
+<button id = "btn" onclick="buttonfunction()"> Click me to see result </button>
+</br></br>
+
 <script type="text/javascript">
    var First;
    var Second;
@@ -321,6 +336,7 @@ Note: Please answer each question in <strong>10</strong> seconds.</p>
    function buttonfunction(){
      if(arr.length!=4){
 		alert("please finish questions");
+		
 	 }else{
 		alert("Your choice is"+" "+arr[0]+arr[1]+arr[2]+arr[3]);
 		q2result();
@@ -332,17 +348,115 @@ Note: Please answer each question in <strong>10</strong> seconds.</p>
 <!-- 
 	second end here
 -->
+
+<!-- 
+	Third start here
+-->
 <h3><a name="love"></a><em>when can you find the right one?</em></h3>
 <hr />
-<p>aaa</p>
+<p>Select your favorite picture below</p>
+<form>
+  <input type="radio" name="loveq" onclick="setone()">
+  <img src = "love1.png" height="250" width="250"/>
+  <input type="radio" name="loveq" onclick="settwo()">
+  <img src = "love2.png" height="250" width="250"/>
+  </br>
+  <input type="radio" name="loveq" onclick="setthree()">
+  <img src = "love3.png" height="250" width="250"/>
+  <input type="radio" name="loveq" onclick="setfour()">
+  <img src = "love4.jpg" height="250" width="250"/>
 
-<h3><a name="number"></a><em>your lucky number</em></h3>
+  </br> </br> </br>
+</form>
+<button id="btn" onclick="results()">Click me to see the result</button>
+
+
+<script type="text/javascript">
+   var time;
+   var todo;
+   var arr1 = new Array();
+   function setone(){
+      arr1[0] = "right";
+	  arr1[1] = "no";
+	  arr1[2] = "no";
+	  arr1[3] = "no";
+	}
+   function settwo(){
+      arr1[1] = "right";
+	  arr1[0] = "no";
+	  arr1[2] = "no";
+	  arr1[3] = "no";
+	}
+   function setthree(){
+      arr1[2] = "right";
+	  arr1[0] = "no";
+	  arr1[1] = "no";
+	  arr1[3] = "no";
+	}
+   function setfour(){
+      arr1[3] = "right";
+	  arr1[1] = "no";
+	  arr1[2] = "no";
+	  arr1[0] = "no";
+	}
+	
+	function results(){
+	
+		if(arr1[0]=="right"){
+			time = "You may meet the right one in the next 6 months. ";
+			todo = "She/He is outgoing and working in the finanicial area";
+			alert(time+todo);
+			
+		}else if(arr1[1]=="right"){
+			time = "You may not meet the right one recently. ";
+			todo = "Because you still cannot forget your ex";
+			alert(time+todo);
+			
+		}else if(arr1[2]=="right"){
+			time = "Congratulation. You may meet the right one recently. ";
+			todo = "You friends will introduce him/her to you. He/She enjoy outdoor activities.";
+			alert(time+todo);
+		
+		}else if(arr1[3]=="right"){
+			time = "You may not meet the right one recently. ";
+			todo = "Go to parties and make friends. Do not be shy.";
+			alert(time+todo)
+		}else{
+			alert("please select a picture");
+		}
+	}
+	
+</script>
+
+
+<!-- 
+	Third end here
+-->
+
+<h3><a name="number"></a><em>Your lucky number</em></h3>
 <hr />
-<p>aaa</p>
-
+</br>
+<img src = "lucky.jpg" height="250">
+</br>
+<button id="btn" onclick="numresult()">Click me to see your lucky number</button>
+<script type="text/javascript">
+	var arr2 = Array(7);
+    var i;
+	var curr;
+	function numresult(){
+		for(i=0;i<arr2.length;i++){
+           arr2[i] = Math.floor((Math.random() * 99) + 1);		
+		}
+	var rre = arr2.join();
+	alert("Go and buy a lottery with those number and good lucky!"+": "+rre);
+	}
+</script>
 <h3><a name="conclusion"></a><em>Something you need to know</em></h3>
 <hr />
-<p>aaa</p>
+<p>This website is only for entertainment. Even the test results tell you: You will be rich or you will find your lover in 6 months,</br>
+those results cannot guarantee anything. Your life is in your hand, keep working and make efforts to achieve your goals. Hope you luckcy and 
+happiness, my friends</br>
+
 
 </body>
 </html>
