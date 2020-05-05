@@ -1,0 +1,461 @@
+<!doctype html>
+
+<html>
+<head>
+<title> Fun tests -- ZHM</title>
+		<style type="text/css">
+			body{
+				border: 2px solid black;
+				padding: 25px;
+
+				background: url(back5.jpg);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+
+			}
+			#myBtn{
+				  position: fixed;
+			      bottom: 20px;
+				  right: 30px;
+			      z-index: 99;
+			      font-size: 18px;
+				  background-color: Lightblue;
+				  color: white;
+                  cursor: pointer;
+				  padding: 15px;
+				  border-radius: 4px;
+			
+			}
+			h1.ad1{
+				text-align:center;
+				padding: 50px 70px 50px 90px;
+			}
+			#pic1{
+				  width: 100%;
+				  padding: 20px 0;
+				  background-color: pink;
+				  margin-top: 10px;
+			}
+			#btn{
+			      font-size: 18px;
+				  background-color: pink;
+				  color: white;
+                  cursor: pointer;
+				  padding: 15px;
+			}
+			#fbtn{
+				  font-size: 18px;
+				  background-color: pink;
+				  color: white;
+                  cursor: pointer;
+				  padding: 15px;
+			}
+		</style>
+</head>
+
+<body>
+<!-- 
+	Create go to top button
+-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button>
+
+<script type="text/javascript">
+
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function(){scrollfuction()}
+
+function scrollfuction(){
+		if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+			mybutton.style.display = "block";
+		}else{
+			mybutton.style.display = "none";
+		}
+}
+
+function topFunction(){
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<!-- 
+	End Create go to top button
+-->
+<h1 class="ad1">Start to know yourself</h1></br>
+
+<a href="#intro">Introduction</a></br>
+<a href="#personality">you may not know yourself</a></br>
+<a href="#carrer">How is your carrer</a></br>
+<a href="#love">when can you find the right one?</a></br>
+<a href="#number">your lucky number</a></br>
+<a href="#conclusion">Something you need to know</a></br>
+
+<h3><a name="intro"></a> <em>Introduction</em></h3>
+<hr />
+
+<p>Human is a kind of complicated and interesting animal. we eat food because we hungry,</br>
+we drink water because we thirsty and we sleep because we tired. Those things are animal's </br>
+instinct, human do them, other animals, like cat or dog, they all do them. However, what makes human</br> 
+"human" is our intelligence and personality. We all make choice everyday, your environment, carrer, lover...</br>
+are all the results of your choices. But, stand behind the mirror and ask yourself. </br>
+Are you really happy for all your choices? Does all your choices follow your heart? Do you really want to do your current job for next 50 years?</br>
+</br></br>
+Now, it is time to know your self better!
+</br>
+<img src = "intro.jpeg" height="250"/> 
+</p>
+
+<!-- 
+	First start here
+-->
+<h3><a name="personality"></a><em>you may not know yourself</em></h3>
+<hr />
+<p>There are 21 people in the tree, select the position you want to stay in 10 seconds</p>
+<img src = "per1.png" height="550"/>
+</br>
+<button id = "fbtn" onclick="pic1result()">Click me to see/hide result</button>
+<div id="pic1" style="display:none">
+<p><strong>If you pick 1/3/6/7</strong></br>
+You are a positive and enthusiasm person. what doesn't kill you makes you stronger.</br>
+With your positive attitude, you have better chance to success.</p>
+<p><strong>If you pick 2/11/12/18/19</strong></br>
+You are a social person and have many friends. You are special to your friends</br>
+you are willing to help your friends when they have trouble.</p>
+<p><strong>If you pick 4</strong></br>
+You do not like things changing and usually take things as they come. Instead of chasing</br>
+fame and wealth, spiritual satisfaction is more important to you.</p>
+<p><strong>If you pick 5</strong></br>
+You are Pessimism. You hide yourself and never share your pain with others.</br>
+There is no motivation in your life, and you feel tired. Advice: Do more sports and make friends</p>
+<p><strong>If you pick 9</strong></br>
+You are a genuinely friendly and generous person. You have strong curiosity and willing to learn</br>
+and explore unknow things</p>
+<p><strong>If you pick 13/21</strong></br>
+Extroverted autism is the best description for you. You have some friends, but you do not want to share</br>
+your secret with them. When you meet troubles, you always escape instead of solve them.</p>
+<p><strong>If you pick 8</strong></br>
+You are a simple person with strong self-esteem. You do everything in your way and unwilling to</br>
+accept other's opinions. You will never give up on things you believe.</p>
+<p><strong>If you pick 10/15</strong></br>
+You refuse vulgar culture and enjoy high-quality life. You do not like to argue with people, but insist of</br>
+what you believe.</p>
+<p><strong>If you pick 14</strong></br>
+You always put yourself in a dilemma. When problems happen in your life, you always hope things have a turnaround</br>
+but usually, you are unwilling to change yourself.</p>
+<p><strong>If you pick 20</strong></br>
+You eager to play the role of leader in a group. However, sometimes, being arrogant may hurt the people who</br>
+are really care about you.</p>
+<p><strong>If you pick 16</strong></br>
+You are a sensitive person. When you have some troubles, you always hope to receive friends' help</p>
+<p><strong>If you pick 17</strong></br>
+You has the very strong sense of responsibility. You are very helpful and trustwrothy to your friends.</br>
+However, you always hope get attention in a group of people. You afraid of being alone.
+
+
+</div>
+<script type="text/javascript">
+	function pic1result(){
+	  var x = document.getElementById("pic1");
+	  if (x.style.display == "none") {
+		x.style.display = "block";
+	  }else{
+		x.style.display = "none";
+	}
+}
+</script>
+</br></br>
+
+
+<!-- 
+	First end here
+-->
+
+<!-- 
+	second start here
+-->
+<h3><a name="carrer"></a><em>How is your carrer</em></h3>
+<hr />
+<p>Four steps to see the best job for you (16 possibilities)</br>
+Note: Please answer each question in <strong>10</strong> seconds.</p>
+</br>
+<img src = "q2pic.JPG" height="200"/>
+</br>
+<p>1, In the weekend, you prefer:</p>
+	  <p>Go out with your family/friends (E)</p>
+	  <p>Stay at home and watch tv/read books (I)</p>
+	  <select id="First" onchange="setFirst()">
+            <option selected disabled>Choose one</option>
+            <option value="E">E</option>
+            <option value="I">I</option>
+      </select>
+</br></br>
+<p>2, When you learn something new, you prefer:</p>
+	  <p>Learn everything you can see (S)</p>
+	  <p>only learn some parts that you are interesting in (N)</p>
+	  <select id="Second" onchange="setSecond()">
+            <option selected disabled>Choose one</option>
+            <option value="S">S</option>
+            <option value="N">N</option>
+      </select>
+</br></br>
+<p>3, When you make a decision, you are more:</p>
+	  <p> reationality (T)</p>
+	  <p> sensibility (F)</p>
+	  <select id="Thrid" onchange="setThrid()">
+            <option selected disabled>Choose one</option>
+            <option value="T">T</option>
+            <option value="F">F</option>
+      </select>
+</br></br>
+<p>4, Which one you prefer?</p>
+	  <p> Everything ordered and make plans before actions (J)</p>
+	  <p> Enjoy surprises (P)</p>
+	  <select id="Fourth" onchange="setFourth()">
+            <option selected disabled>Choose one</option>
+            <option value="J">J</option>
+            <option value="P">P</option>
+      </select>
+</br></br>
+
+<button id = "btn" onclick="buttonfunction()"> Click me to see result </button>
+</br></br>
+
+<script type="text/javascript">
+   var First;
+   var Second;
+   var Third;
+   var Fourth
+   var arr = new Array();
+   var res;
+   function setFirst(){
+      First = document.getElementById('First').value;
+	  arr[0] = First;
+	  
+	  }
+   function setSecond(){
+      Second = document.getElementById('Second').value;
+	  arr[1] = Second;
+	  
+	  }
+   function setThrid(){
+      Thrid = document.getElementById('Thrid').value;
+	  arr[2] = Thrid;
+	  
+	  }
+   function setFourth(){
+      Fourth = document.getElementById('Fourth').value;
+	  arr[3] = Fourth;
+	  
+	  }
+   function q2result(){
+	   if(arr[0]=="I"&&arr[1]=="N"&&arr[2]=="T"&&arr[3]=="P"){
+			res = "You enjoy working alone and good at analyzing. You are smart but not sociable.";
+			jobs = " The work you may want to do: Programmer, Data analyst and Software developer";
+			alert(res+jobs);
+	   }else if(arr[0]=="E"&&arr[1]=="S"&&arr[2]=="T"&&arr[3]=="P"){
+			res = "You are a sociable and attractive person. You know how to adjust in a new environment.";
+			jobs = " The work you may want to do: Financial specialist, CSR, HR and journalist";
+			alert(res+jobs);
+		}else if(arr[0]=="I"&&arr[1]=="S"&&arr[2]=="F"&&arr[3]=="P"){
+			res = "You do things in your own pace. You enjoy relaxing environment and always have positive attitude to your life.";
+			jobs = " The work you may want to do: Surveyor, chef and interior designer";
+			alert(res+jobs);
+		
+		}
+		else if(arr[0]=="E"&&arr[1]=="N"&&arr[2]=="T"&&arr[3]=="J"){
+			res = "You are a independent and rational person. You have ambition and focus on how to success.";
+			jobs = " The work you may want to do: Self-employed, Marketing Manager and programmer";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="S"&&arr[2]=="F"&&arr[3]=="J"){
+			res = "You are a quiet and considerate person. You respect and accept different people.";
+			jobs = " The work you may want to do: Real estate borker, artist and commodity planners";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="N"&&arr[2]=="T"&&arr[3]=="J"){
+			res = "You are creative and have your own style. You prefer to work alone and know how to use your energy on your carrer.";
+			jobs = " The work you may want to do: Designer, programmer, artist and financial analyst";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="S"&&arr[2]=="T"&&arr[3]=="P"){
+			res = "You are quiet and good at analyzing. You always want to know the essence of things. You are competitive and do not care about rules too much.";
+			jobs = " The work you may want to do: Ocean biology researcher, technique trainer and managing counslor";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="S"&&arr[2]=="F"&&arr[3]=="P"){
+			res = "You enjoy becoming the center of a group of poeple. You enjoy experiencing new things and showing your talent in front of people ";
+			jobs = " The work you may want to do: Actor/actress, public relations practitioner and tour guide";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="N"&&arr[2]=="F"&&arr[3]=="J"){
+			res = "You are mysterious and never give up on things you believe. You do not want to share your personal information with others. You are a inborn leader";
+			jobs = " The work you may want to do: HR manager, art director and simultaneous interpretation";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="N"&&arr[2]=="F"&&arr[3]=="P"){
+			res = "You are creative and always have energy. You eager to learn new things and make friend. However, you are easy to feel boring";
+			jobs = " The work you may want to do: TV shows' propagandist, HR and announcer ";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="S"&&arr[2]=="T"&&arr[3]=="J"){
+			res = "You are conservative and hard-working. You enjoy communicating with others but do not like new things";
+			jobs = " The work you may want to do: civil servant, Project manager and support crew";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="S"&&arr[2]=="T"&&arr[3]=="J"){
+			res = "You are trustwrothy and rational. You are not sociable, but you always try your best to perfectly finish your works.";
+			jobs = " The work you may want to do: Programmer, medical researcher and accountant";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="N"&&arr[2]=="F"&&arr[3]=="J"){
+			res = "You are a strong supporter of your family/friends. You enjoy sharing with others. And you are sociable and loyal.";
+			jobs = " The work you may want to do: Security, journalist, writer and account manager";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="I"&&arr[1]=="N"&&arr[2]=="F"&&arr[3]=="P"){
+			res = "You are a idealist and curious about new things. You protect family/friends and never let them get hurt.";
+			jobs = " The work you may want to do: Architect, psychologist and interpreter";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="N"&&arr[2]=="T"&&arr[3]=="P"){
+			res = "You enjoy talking and sharing your ideas. You are smart and like analyzing. You have ability to quickly adapt to new environment.";
+			jobs = " The work you may want to do: Financial/Marketing planner, investment broker and Advertising Creative Guidance";
+			alert(res+jobs);
+		}
+		else if(arr[0]=="E"&&arr[1]=="S"&&arr[2]=="F"&&arr[3]=="J"){
+			res = "You are a kind person and do not like arguing. You enjoy staying with your family and patient on everything.";
+			jobs = " The work you may want to do: HR, seller, office coordinator";
+			alert(res+jobs);
+		}
+		else{
+			alert("please finish questions");
+		}
+   }
+   function buttonfunction(){
+     if(arr.length!=4){
+		alert("please finish questions");
+		
+	 }else{
+		alert("Your choice is"+" "+arr[0]+arr[1]+arr[2]+arr[3]);
+		q2result();
+     }
+	}
+</script>
+
+
+<!-- 
+	second end here
+-->
+
+<!-- 
+	Third start here
+-->
+<h3><a name="love"></a><em>when can you find the right one?</em></h3>
+<hr />
+<p>Select your favorite picture below</p>
+<form>
+  <input type="radio" name="loveq" onclick="setone()">
+  <img src = "love1.png" height="250" width="250"/>
+  <input type="radio" name="loveq" onclick="settwo()">
+  <img src = "love2.png" height="250" width="250"/>
+  </br>
+  <input type="radio" name="loveq" onclick="setthree()">
+  <img src = "love3.png" height="250" width="250"/>
+  <input type="radio" name="loveq" onclick="setfour()">
+  <img src = "love4.jpg" height="250" width="250"/>
+
+  </br> </br> </br>
+</form>
+<button id="btn" onclick="results()">Click me to see the result</button>
+
+
+<script type="text/javascript">
+   var time;
+   var todo;
+   var arr1 = new Array();
+   function setone(){
+      arr1[0] = "right";
+	  arr1[1] = "no";
+	  arr1[2] = "no";
+	  arr1[3] = "no";
+	}
+   function settwo(){
+      arr1[1] = "right";
+	  arr1[0] = "no";
+	  arr1[2] = "no";
+	  arr1[3] = "no";
+	}
+   function setthree(){
+      arr1[2] = "right";
+	  arr1[0] = "no";
+	  arr1[1] = "no";
+	  arr1[3] = "no";
+	}
+   function setfour(){
+      arr1[3] = "right";
+	  arr1[1] = "no";
+	  arr1[2] = "no";
+	  arr1[0] = "no";
+	}
+	
+	function results(){
+	
+		if(arr1[0]=="right"){
+			time = "You may meet the right one in the next 6 months. ";
+			todo = "She/He is outgoing and working in the finanicial area";
+			alert(time+todo);
+			
+		}else if(arr1[1]=="right"){
+			time = "You may not meet the right one recently. ";
+			todo = "Because you still cannot forget your ex";
+			alert(time+todo);
+			
+		}else if(arr1[2]=="right"){
+			time = "Congratulation. You may meet the right one recently. ";
+			todo = "You friends will introduce him/her to you. He/She enjoy outdoor activities.";
+			alert(time+todo);
+		
+		}else if(arr1[3]=="right"){
+			time = "You may not meet the right one recently. ";
+			todo = "Go to parties and make friends. Do not be shy.";
+			alert(time+todo)
+		}else{
+			alert("please select a picture");
+		}
+	}
+	
+</script>
+
+
+<!-- 
+	Third end here
+-->
+
+<h3><a name="number"></a><em>Your lucky number</em></h3>
+<hr />
+</br>
+<img src = "lucky.jpg" height="250">
+</br>
+<button id="btn" onclick="numresult()">Click me to see your lucky number</button>
+<script type="text/javascript">
+	var arr2 = Array(7);
+    var i;
+	var curr;
+	function numresult(){
+		for(i=0;i<arr2.length;i++){
+           arr2[i] = Math.floor((Math.random() * 99) + 1);		
+		}
+	var rre = arr2.join();
+	alert("Go and buy a lottery with those number and good lucky!"+": "+rre);
+	}
+</script>
+<h3><a name="conclusion"></a><em>Something you need to know</em></h3>
+<hr />
+<p>This website is only for entertainment. Even the test results tell you: You will be rich or you will find your lover in 6 months,</br>
+those results cannot guarantee anything. Your life is in your hand, keep working and make efforts to achieve your goals. Hope you luckcy and 
+happiness, my friends</br>
+
+
+</body>
+</html>
